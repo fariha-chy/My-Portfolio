@@ -1,0 +1,295 @@
+/* <!-- -------- Google Font Roboto -------- --> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff9ea;}
+a { text-decoration: none;}
+.btn {font-weight: 600;
+    background-color: #f7797d;
+    color: white ;
+    padding: 8px 15px ;
+    border-radius: 2em;
+    border: 3px solid transparent;
+    margin: 1em;}
+
+.btn:hover {border: 3px solid #79fddc;}
+
+h2 { margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #f7797d;
+    font-weight: 600;
+}
+h4 { color: #f7797d;}
+    /* ---------- Nav Section ---------- */ 
+nav {
+    background: #c6ffdd;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    float: top;
+    z-index: 1;
+    box-shadow: 0 1px 5px black;
+}
+.logo {color: #000;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 80px;
+}
+nav ul {
+     float: right;
+     margin-right: 20px;
+    }
+nav ul li { display: inline-flex;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a { color: #000;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.nav-section .nav-manu a:hover {color: #f7797d;
+    border-bottom: 2px solid #f7797d;
+    padding-bottom: .5em;
+}
+.nav-section .logo:hover {transform: rotateX('360deg');
+    transition-duration: 1.5s;}
+/* .checkbtn {font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;}
+#check { display: none;} */
+
+    /* ---------- Home Section ---------- */ 
+
+.home{position: relative;
+    padding-top: 5em;
+    background-image: linear-gradient(to top right,
+    #c6ffdd , #fbd786, #f7797d );
+    align-items: center;}
+.cover {display: grid;
+    grid-template-columns: repeat(2,1fr);}
+.cover-img img{
+    width: auto;
+    height: 38em;} 
+.cover .cover-title { width: 100%;
+    padding: 8em 0;}
+.cover-title h1 {font-weight: 900;}
+
+    /* ---------- About Section ---------- */ 
+
+.about { padding-top: 1em;}
+.about-section {display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    align-items: center;
+}
+.about-img {border: 5px solid ;
+    border-radius: 15em;
+    overflow: hidden;
+    width: 15em;
+    height: 15em;}
+
+.about-img img{
+    width:  15em;
+    height: 15em;}
+
+    /* ---------- Service Section ---------- */ 
+
+.services{padding-top: 1em;}
+.service-section {text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;}
+.service-section .inner { position: relative;}
+.inner, .service { background-color: #fbd786;}
+/* .service { padding: 2em;} */
+.inner .service {color: #000;
+    background-color: #fbd786;
+    padding: 2em;}
+.inner { background-color: #79fddc;}
+.service i {font-size: 2em;
+    border: 5px solid #79fddc;
+    padding: .50em;
+    margin-bottom:10px ;
+    border-radius: 5em;}
+.inner:hover { transform: rotate(5deg);}
+
+    /* ---------- Skills Section ---------- */ 
+
+.skills {padding-top: 1em;}
+.skills-section {display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+.skill-bar .info {display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.skill-bar .bar {
+    width: 100%;
+    height: .9em;
+    position: relative;
+    background-color: #fbd786;
+    border-radius: 2em;}
+.skill-bar .bar span{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    background-color: #79fddc;
+    border-radius: 2em;}
+
+.skill-bar .bar .data-entry {width: 90%;
+    animation: data-entry 3s;}
+@keyframes data-entry { 0% { width: 0;}
+    100%{ width: 90%;}}
+
+.skill-bar .bar .data-management {width: 90%;
+    animation: data-management 3s;}
+@keyframes data-management { 0% { width: 0;}
+    100%{ width: 90%;}}
+
+.skill-bar .bar .presentation {width: 90%;
+    animation: presentation 3s;}
+@keyframes presentation { 0% { width: 0;}
+    100%{ width: 90%;}}
+
+.skill-bar .bar .digital-marketing {width: 80%;
+    animation: digital-marketing 3s;}
+@keyframes digital-marketing { 0% { width: 0;}
+    100%{ width: 80%;}}
+
+.skill-bar .bar .website {width: 90%;
+    animation: website 3s;}
+@keyframes website { 0% { width: 0;}
+    100%{ width: 90%;}}
+
+.skill-bar .bar .graphics {width: 95%;
+    animation: graphics 3s;}
+@keyframes graphics { 0% { width: 0;}
+    100%{ width: 95%;}}
+
+.skill-bar .bar .photographer {width: 95%;
+    animation: photographer 3s;}
+@keyframes photographer { 0% { width: 0;}
+    100%{ width: 95%;}}
+
+.skill-bar .bar .audio {width: 80%;
+    animation: audio 3s;}
+@keyframes audio { 0% { width: 0;}
+    100%{ width: 80%;}}
+
+.skill-bar .bar .video {width: 80%;
+    animation: audio 3s;}
+@keyframes video { 0% { width: 0;}
+    100%{ width: 80%;}}
+
+.skill-bar .bar .animator {width: 80%;
+    animation: animator 3s;}
+@keyframes animator { 0% { width: 0;}
+    100%{ width: 80%;}}
+
+    /* ---------- Portfolio Section ---------- */ 
+
+.portfolio {padding-top: 1em;}
+.portfolio-section { display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+    border-radius: 2em;}
+.picture {width: 20em;
+    height: 20em;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-shadow: 0 1px 5px black;}
+.picture img { width: 100%;
+    height: 100%;}
+.picture img:hover {transform: scale(1.5);
+    transition-duration: 1.5s; }
+
+    /* ---------- Previous Works/Sample Section ---------- */
+
+.sample {padding-top: 1em;}
+.works-section { display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+    padding-bottom: 3em;}
+.work {margin: 1em;
+    text-align: center;
+    background-color: #fbd786;}
+.work-img img { width: 100%;}
+.work:hover {border: 3px solid #79fddc;
+    color: #ffffff;}
+.work-info {padding: 1em;}
+.work-info p { color: #000;}
+
+     /* ---------- FAQ Section ---------- */
+
+.faq-section {padding-top: 1em;
+    justify-items: center;
+    display: grid;
+    gap: 2em;
+}
+.faq {display: grid;}
+.que-section {display:flex;
+    color: #000000;
+}
+.faq {display: inline;
+    padding: 2em 6em;
+    background-color: #79fddc ;
+    border-radius: 2em;}
+
+
+
+    /* ---------- Footer/Contact Section ---------- */ 
+
+.contact { background-color: #c6ffdd;
+    padding-top: 4em;}
+.footer {display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;}
+.footer {color: black;}
+.footer-2 .nav-manu {
+    display: grid;
+    gap: 1em;}
+.social>p>i { padding-right: 10px;}
+.copyright { color: #f7797d;
+    text-align: center;
+    padding-bottom: 3em;}
+.footer a { color: #000;}
+
+    /* ---------- Mobile Responsive ---------- */
+
+    /* ---------- Tab Responsive ---------- */
+
+
+
+
+    /* ---------- Nav Responsive ---------- */
+
+    /* @media  (max-width: 952px) {
+        lagel.logo{font-size: 30px;
+        padding-left: 50px;}
+        nav ul li a {font-size: 16px;
+    }}
+    
+    @media (max-width: 858px) {
+        .checkbtn {display: block;}
+        ul {position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 80px;
+            left: 0; 
+            text-align: center;}
+        nav ul li {display: block;}
+        nav ul li a {font-size: 20px;}
+        a:hover, a.active {color: #d66f6f;
+            background: none;}
+        #check:checked ~ ul {
+            left: 0;
+        }
+    } */
