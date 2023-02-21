@@ -11,16 +11,16 @@ a { text-decoration: none;}
     padding: .5em 1em ;
     border-radius: 2em;
     border: 3px solid transparent;
-    margin: 1em;}
+    margin-top: 1em;}
 
 .btn:hover {border: 3px solid #79fddc;}
 
 h2 { margin-top: 2em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     text-align: center;
     color: #f7797d;
     font-weight: 600;}
-h4 { color: #f7797d;}
+h4 {color: #f7797d;}
 
     /* ---------- Nav Section ---------- */ 
 
@@ -51,7 +51,7 @@ nav ul li a { color: #ffcc56;
 .nav-section .logo:hover{transform:rotateX(360deg);
     transition-duration: 1.5s;}
 
-.nav-manu a:hover {color: #f7797d;
+.nav-menu a:hover {color: #f7797d;
         border-bottom: 2px solid #f7797d;
         padding-bottom: 10px;
         transition-duration: 1s;}
@@ -78,7 +78,8 @@ nav ul li a { color: #ffcc56;
     height: 38em;} 
 .cover .cover-title { width: 100%;
     padding: 8em 0;}
-.cover-title h1 {font-weight: 900;}
+.cover-title h1 {font-weight: 900;
+    text-align: center;}
 
     /* ---------- About Section ---------- */ 
 
@@ -109,22 +110,20 @@ nav ul li a { color: #ffcc56;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;}
-.ser-box{ position: relative;
-    display: flex;}
 .service, .inner-box { height: 28em ;
     width: 22em ;}
 .service { height: 28em ;
-    width: 22em ;
-    position: absolute;
+    width: 22em ;position: absolute;
     background-color: #fbd786;
     padding: 1.5em;
     color: #000;
-    z-index: 1;}
-.inner-box {height: 28em ;
+    z-index: 0;}
+/* .inner-box {height: 28em ;
+    position: absolute;
     width: 22em ;
     background-color: #79fddc;
-    z-index: 0;
-    transition: transform 2s;}
+    z-index: -1;
+    transition: transform 2s;} */
 
 .ser-box:hover + .inner-box{ transform: rotate(5deg);}
 
@@ -226,7 +225,9 @@ nav ul li a { color: #ffcc56;
     grid-template-columns: repeat(3, 1fr);
     gap: 4em;
     padding-bottom: 3em;}
-.work {margin: 1em;
+.work {height: 32em;
+    width: 20em;
+    margin: 1em;
     text-align: center;
     background-color: #fbd786;}
 .work-img img { width: 100%;}
@@ -270,15 +271,116 @@ nav ul li a { color: #ffcc56;
     padding-bottom: 3em;}
 .footer a { color: #000;}
 
-    /* ---------- Mobile Responsive ---------- */
+    /* ---------- Mobile Responsive [min-width: 580px] ---------- */
 
-    /* ---------- Tab Responsive ---------- */
+    /* --- home --- */
+@media screen and (max-width: 580px) {
+    .btn {justify-content: center;}
+    h2 {text-align: center;}
+    h4 { text-align: center;}
+    .home{width: 85%;
+        padding-top: 5em;}
+    .cover {
+        grid-template-columns: repeat(1,1fr);}
+    .cover-img img{
+        width: auto;
+        height: 20em;} 
+    .cover .cover-title { padding:0 -8em;}
+    .cover-title h1 {font-weight: 600;}
 
+    /* ----- Previous Works/Sample ----- */
+.works-section {justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+        gap: 1em;}
+.work {height: 32em;
+        width: 20em;}
+    /* ----- Services ----- */
 
+    .service-section {justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;}
 
+    /* --- About --- */
+.about-section {justify-items: center;
+    grid-template-columns: repeat(2,1fr);}
+.about-me { text-align: center;
+    padding: 2em;}
 
+    /* --- Skills --- */
+.skills-section { grid-template-columns: repeat(1, 1fr);
+    gap: 1.5em;}
+.skill-bar .bar {height: .8em;}
+
+    /* --- Portfolio --- */
+.portfolio-section { justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;}
+
+        /* --- FAQ --- */
+.faq {padding: 1em 2em;}
+    /* --- Footer --- */
+.contact {text-align: center;
+        padding-top: 4em;}
+.footer { grid-template-columns: repeat(1, 1fr);
+        gap: 1.5em;}
+}
+
+    /* ---------- Tab Responsive [max-width:992px]---------- */
+
+@media screen and (min-width: 580px) and (max-width: 992px) {
+    .btn {justify-content: center;}
+    h2 {text-align: center;}
+    h4 { text-align: center;}
+    .home{width: 85%;
+        padding-top: 5em;}
+    .cover {
+        grid-template-columns: repeat(2,1fr);}
+    .cover-img img{
+        width: auto;
+        height: 20em;} 
+    .cover .cover-title { padding:0 -8em;}
+    .cover-title h1 {font-weight: 600;}
+
+    /* ----- Previous Works/Sample ----- */
+.works-section {justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+        gap: 1em;}
+.work {height: 30em;
+        width: 20em;}
+
+    /* ----- Services ----- */
+.service-section {justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;}
+
+    /* --- About --- */
+.about-section {justify-items: center;
+    grid-template-columns: repeat(1,1fr);}
+.about-me { text-align: center;
+    padding: 2em;}
+
+    /* --- Skills --- */
+.skills-section { grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;}
+.skill-bar .bar{height: .8em;}
+
+    /* --- Portfolio --- */
+.portfolio-section { justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;}
+
+        /* --- FAQ --- */
+.faq {padding: 1em 2em;}
+
+    /* --- Footer --- */
+.contact {text-align: center;
+        padding-top: 4em;}
+.footer { grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;}
+}
+
+    
     /* ---------- Nav Responsive ---------- */
-
     /* @media  (max-width: 952px) {
         lagel.logo{font-size: 30px;
         padding-left: 50px;}
