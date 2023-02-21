@@ -19,42 +19,40 @@ h2 { margin-top: 2em;
     margin-bottom: 1em;
     text-align: center;
     color: #f7797d;
-    font-weight: 600;
-}
+    font-weight: 600;}
 h4 { color: #f7797d;}
+
     /* ---------- Nav Section ---------- */ 
-nav {
-    background: #c6ffdd;
+
+nav {background: #c6ffdd;
     height: 80px;
     width: 100%;
     position: fixed;
     top: 0%;
     float: top;
     z-index: 1;
-    box-shadow: 0 1px 5px black;
-}
-.logo {color: #000;
-    font-size: 36px;
+    box-shadow: 0 1px 5px black;}
+.logo {color: #f7797d;
+    font-size: 2em;
     font-weight: bold;
-    line-height: 80px;
-}
+    line-height: 80px;}
 nav ul {
      float: right;
-     margin-right: 20px;
+     /* margin-right: 1em; */
     }
 nav ul li { display: inline-flex;
-    line-height: 80px;
-    margin: 0 5px;
+    line-height: 5em;
+    margin: 0 .3em;
 }
 nav ul li a { color: #000;
-    font-size: 17px;
+    font-size: 1em;
     text-transform: uppercase;
 }
 .nav-section .nav-manu a:hover {color: #f7797d;
     border-bottom: 2px solid #f7797d;
     padding-bottom: .5em;
 }
-.nav-section .logo:hover {transform: rotateX('360deg');
+.nav-section .logo:hover{transform:rotateX(360deg);
     transition-duration: 1.5s;}
 /* .checkbtn {font-size: 30px;
     color: #ffffff;
