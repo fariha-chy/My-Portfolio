@@ -52,8 +52,7 @@ nav ul li a { color: #ffcc56;
     transition-duration: 1.5s;}
 
 .nav-menu a:hover {color: #f7797d;
-        border-bottom: 2px solid #f7797d;
-        padding-bottom: 10px;
+        border-bottom: 3px solid #f7797d;
         transition-duration: 1s;}
 /* .checkbtn {font-size: 30px;
     color: #ffffff;
@@ -77,9 +76,12 @@ nav ul li a { color: #ffcc56;
     width: auto;
     height: 38em;} 
 .cover .cover-title { width: 100%;
-    padding: 8em 0;}
+    padding: 8em 0;
+    align-content: center;
+    justify-items: center;}
 .cover-title h1 {font-weight: 900;
     text-align: center;}
+.cover .cover-title a {justify-items: center;}
 
     /* ---------- About Section ---------- */ 
 
@@ -223,7 +225,7 @@ nav ul li a { color: #ffcc56;
 .sample {padding-top: 1em;}
 .works-section { display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4em;
+    gap: 2em;
     padding-bottom: 3em;}
 .work {height: 32em;
     width: 20em;
@@ -288,6 +290,12 @@ nav ul li a { color: #ffcc56;
     .cover .cover-title { padding:0 -8em;}
     .cover-title h1 {font-weight: 600;}
 
+/* --- About --- */
+    .about-section {justify-items: center;
+        grid-template-columns: repeat(2,1fr);}
+    .about-me { text-align: center;
+        padding: 2em;}
+    
     /* ----- Previous Works/Sample ----- */
 .works-section {justify-items: center;
     grid-template-columns: repeat(1, 1fr);
@@ -296,15 +304,9 @@ nav ul li a { color: #ffcc56;
         width: 20em;}
     /* ----- Services ----- */
 
-    .service-section {justify-items: center;
+.service-section {justify-items: center;
         grid-template-columns: repeat(1, 1fr);
         gap: 2em;}
-
-    /* --- About --- */
-.about-section {justify-items: center;
-    grid-template-columns: repeat(2,1fr);}
-.about-me { text-align: center;
-    padding: 2em;}
 
     /* --- Skills --- */
 .skills-section { grid-template-columns: repeat(1, 1fr);
@@ -333,7 +335,7 @@ nav ul li a { color: #ffcc56;
     h4 { text-align: center;}
     .home{width: 85%;
         padding-top: 5em;}
-    .cover {
+    .cover {justify-items: center;
         grid-template-columns: repeat(2,1fr);}
     .cover-img img{
         width: auto;
@@ -387,7 +389,7 @@ nav ul li a { color: #ffcc56;
         nav ul li a {font-size: 16px;
     }}
     
-    @media (max-width: 858px) {
+    @media (max-width: 992px) {
         .checkbtn {display: block;}
         ul {position: fixed;
             width: 100%;
