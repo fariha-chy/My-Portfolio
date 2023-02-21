@@ -8,7 +8,7 @@ a { text-decoration: none;}
 .btn {font-weight: 600;
     background-color: #f7797d;
     color: white ;
-    padding: 8px 15px ;
+    padding: .5em 1em ;
     border-radius: 2em;
     border: 3px solid transparent;
     margin: 1em;}
@@ -87,14 +87,12 @@ nav ul li a { color: #000;
 .about-section {display: grid;
     grid-template-columns: repeat(2,1fr);
     position: relative;
-    align-items: center;
-}
+    align-items: center;}
 .about-img {border: 5px solid ;
     border-radius: 15em;
     overflow: hidden;
     width: 15em;
     height: 15em;}
-
 .about-img img{
     width:  15em;
     height: 15em;}
@@ -102,23 +100,34 @@ nav ul li a { color: #000;
     /* ---------- Service Section ---------- */ 
 
 .services{padding-top: 1em;}
-.service-section {text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;}
-.service-section .inner { position: relative;}
-.inner, .service { background-color: #fbd786;}
-/* .service { padding: 2em;} */
-.inner .service {color: #000;
-    background-color: #fbd786;
-    padding: 2em;}
-.inner { background-color: #79fddc;}
 .service i {font-size: 2em;
     border: 5px solid #79fddc;
     padding: .50em;
     margin-bottom:10px ;
     border-radius: 5em;}
-.inner:hover { transform: rotate(5deg);}
+.service-section {text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;}
+.service, .inner-box { height: 28em ;
+    width: 22em ;}
+.service { height: 28em ;
+    width: 22em ;
+    position: relative;
+    background-color: #fbd786;
+    padding: 1.5em;
+    border-radius: 2em;
+    color: #000;}
+.inner-box {position: relative;
+    background-color: #79fddc;
+    height: 28em ;
+    width: 22em ;}
+
+.inner-box:hover{ transform: rotate(5deg);}
+
+/* 
+
+.ser-box:hover { transform: rotate(5deg);} */
 
     /* ---------- Skills Section ---------- */ 
 
