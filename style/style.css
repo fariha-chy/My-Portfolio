@@ -88,13 +88,13 @@ nav a:hover {color: #ffffff;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;}
-.service { height: 30em ;
-    width: 20em ;position: relative;
+.service { width: 20em ;
+    height: 25em ;
+    position: relative;
     background-color: #ffffff;
     padding: 1.5em;
     color: #000;
-    z-index: 0;}
-
+}
 
     /* ---------- Skills Section ---------- */ 
 
